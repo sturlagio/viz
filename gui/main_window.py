@@ -18,10 +18,6 @@ class MainWindow(QMainWindow):
         self.central_widget = QWidget()
         self.plot_layout = QVBoxLayout(self.central_widget)
 
-        self.scroll_area = QScrollArea()
-        self.scroll_area.setWidgetResizable(True)
-        self.scroll_area.setWidget(self.central_widget)
-
         main_layout = QHBoxLayout()
         main_widget = QWidget()
         main_widget.setLayout(main_layout)
@@ -37,7 +33,7 @@ class MainWindow(QMainWindow):
         sidebar_layout.addWidget(self.btn_add_plot)
 
         main_layout.addWidget(self.sidebar)
-        main_layout.addWidget(self.scroll_area)
+        main_layout.addWidget(self.central_widget)
 
     def show_plot_selection_dialog(self):
         dialog = PlotTypeSelectionDialog(self)
