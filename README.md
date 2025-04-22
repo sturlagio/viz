@@ -1,4 +1,4 @@
-# Project Name
+# Viz
 
 This project requires Python 3.13.
 
