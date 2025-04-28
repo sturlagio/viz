@@ -30,3 +30,5 @@ class BarPlotVisualization(Visualization):
         ax.set_ylabel(value_heading)
         ax.set_title(f'{value_heading} by {label_heading}')
         ax.tick_params(axis='x', rotation=45)
+
+        
